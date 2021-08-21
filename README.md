@@ -20,7 +20,9 @@ First of all you will need to ensure that you have the correct files on your loc
 - Copy the `'BikeShare Project.py'` application into the **same** folder as the .csv files.
 
 ### Running the Application
-The application is activated from a terminal window (command prompt, bash, whichever you prefer).
+The application can be launched by simply double-clicking it within the folder. If this does not work the below steps can be followed.
+
+The application can be activated from a terminal window (command prompt, bash, whichever you prefer).
 
 - Using the terminal window of your choice, brows to the folder containing the `.csv` and `.py` files that you copied `$ cd <folder directory>`.
 - Run the `.py` application with the following command: `$ python 'BikeShare Project.py'` (note the quotations).
