@@ -1,5 +1,6 @@
 # BikeShare Database Analysis
-(2021/08/21)
+Project Creation Date: 2021/07/18;
+Project Last Updated: 2021/08/21
 
 ## Project Purpose
 
