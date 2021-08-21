@@ -1,4 +1,4 @@
-# BikeShare Database Analyses
+# BikeShare Database Analysis
 (2021/08/21)
 
 ## Project Purpose
@@ -34,7 +34,7 @@ If an incorrect input is given, the application will inform the user and will pr
 
 >You have entered an invalid city, please try again.
 >
->Availible options are: "Chicago, "New York City" or "Washington"
+>Available options are: "Chicago, "New York City" or "Washington"
 >
 >Please enter the city name for which to filter (Chicago, New York City or Washington)
 
@@ -77,7 +77,7 @@ The following information will be calculated:
 - Summary of users by gender.
 
 
-- The following three statistics is not availible for Washington and will therefore not be displayed if Washington is selected during the filtering process.
+- The following three statistics is not available for Washington and will therefore not be displayed if Washington is selected during the filtering process.
   - Earliest birth year (oldest user) in data set.
   - Most recent birth year (youngest user) in data set.
   - Most common birth year in data set.
