@@ -62,25 +62,22 @@ def get_filter(cat):
             print('\nProgram terminated')
             quit()
 
-        if cat == 'city':
-            if user_input.lower() not in CITY_DATA.keys():
-                print('\nYou have entered an invalid city, please try again.')
-                print('Availible options are: "Chicago, "New York City" or "Washington"\n')
-                continue
+        if (cat == 'city') and (user_input.lower() not in CITY_DATA.keys()):
+            print('\nYou have entered an invalid city, please try again.')
+            print('Availible options are: "Chicago, "New York City" or "Washington"\n')
+            continue
 
-        if cat == 'month':
-            if (user_input.capitalize() not in months):
-                print('\nYou have entered an invalid month, please try again.')
-                print('Availible options are:')
-                print(', '.join(months))
-                continue
+        if (cat == 'month') and (user_input.capitalize() not in months):
+            print('\nYou have entered an invalid month, please try again.')
+            print('Availible options are:')
+            print(', '.join(months))
+            continue
 
-        if cat == 'day':
-            if (user_input.capitalize() not in days):
-                print('\nYou have entered an invalid day, please try again.')
-                print('Availible options are:')
-                print(', '.join(days))
-                continue
+        if (cat == 'day') and (user_input.capitalize() not in days):
+            print('\nYou have entered an invalid day, please try again.')
+            print('Availible options are:')
+            print(', '.join(days))
+            continue
 
         if cat == 'city':
             print(('\nYou have chosen {} as your city.\n').format(user_input.capitalize()))
