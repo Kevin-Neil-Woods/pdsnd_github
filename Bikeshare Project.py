@@ -26,8 +26,7 @@ def load_data(city, month, day):
         print('Looks like the .csv could not be found')
         print('Please ensure that the .csv file and the Python script is in the same directory, and that the .csv files are correctly named:')
         print(', '.join(CITY_DATA.values()))
-        print('\nProgram will terminate automatically')
-        quit()
+        terminate_program()
     #Exception handling incase files are unable to be read
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -48,6 +47,13 @@ def load_data(city, month, day):
 """Loading Data According to Filters"""
 
 
+"""Termintate program"""
+def terminate_program():
+    print('\nProgram terminated')
+    quit()
+"""Termintate program"""
+
+
 """Get User Inputs for Filters"""
 def get_filter(cat):
     while True:
@@ -59,8 +65,7 @@ def get_filter(cat):
             user_input = input('\nPlease enter the the day for which to filter, use "all" to see all days:\n')
 
         if user_input.upper() == 'EXIT':
-            print('\nProgram terminated')
-            quit()
+            terminate_program()
 
         if (cat == 'city') and (user_input.lower() not in CITY_DATA.keys()):
             print('\nYou have entered an invalid city, please try again.')
@@ -86,8 +91,7 @@ def get_filter(cat):
 
         confirmation = input('Is this correct (Y/N)?\n')
         if confirmation.upper() == 'EXIT':
-            print('\nProgram terminated')
-            quit()
+            terminate_program()
         elif confirmation.upper() == 'Y':
             break
         #End of loop
@@ -136,8 +140,7 @@ while True:
             break
 
         if user_input.upper() == 'EXIT':
-            print('\nProgram terminated')
-            quit()
+            terminate_program()
     #Print raw data
 
 
@@ -216,6 +219,5 @@ while True:
 
     user_input = input('Would you like to try again? (Y/N)\n')
     if (user_input.upper() == 'N') or (user_input.upper() == 'EXIT'):
-        print('\nProgram Terminated')
-        break
+        terminate_program()
 """Main Code"""
